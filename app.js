@@ -9,7 +9,7 @@ app.get('/', function(req, res) {
 });
 
 app.get('/die', function(req, res) {
-	db = db || redis.createClient('redis://localhost:6379');
+	db = db || redis.createClient(process.env.REDISTOGO_URL || 'redis://localhost:6379');
 	db.set('matt', 'andrews')
 		.then(function() {
 			return db.get('matt');
