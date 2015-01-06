@@ -8,7 +8,7 @@ var reader = new hiredis.Reader();
 app.get('/', function(req, res) {
 
 	// Data comes in
-	reader.feed("$5\r\nendtoendtest\r\n");
+	reader.feed("$12\r\nendtoendtest\r\n");
 
 	// Reply comes out
 	res.send(reader.get()); // => "hello"
