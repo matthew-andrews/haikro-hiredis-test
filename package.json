@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "express": "^4.10.7",
+    "hiredis": "^0.1.17"
+  }
+}
