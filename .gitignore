@@ -1,2 +1,2 @@
-/node*
-/tmp
+node_modules
+/.idea

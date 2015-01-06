@@ -1,0 +1,9 @@
+[
+    {
+        "name": "instream__reading",
+        "description": "on = a button to view articles inline to the stream is displayed, off = the button is invisible",
+        "safeState": false,
+        "state": false,
+        "expiry": "2014-11-30T00:00"
+    }
+]
