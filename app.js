@@ -2,9 +2,14 @@ var express = require('express');
 var app = express();
 
 var redis = require("then-redis");
-var db = redis.createClient('redis://localhost:6379');
+var db;
 
 app.get('/', function(req, res) {
+	res.status(200).send('OK');
+});
+
+app.get('/die', function(req, res) {
+	db = db || redis.createClient('redis://localhost:6379');
 	db.set('matt', 'andrews')
 		.then(function() {
 			return db.get('matt');
