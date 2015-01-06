@@ -2,7 +2,7 @@
   "name": "hiredis",
    "scripts": {
      "test": "exit 0",
-     "deploy": "haikro build deploy --app hiredis --heroku-token ${HEROKU_AUTH_TOKEN} --verbose"
+     "deploy": "git prune --production && haikro build deploy --app hiredis --heroku-token ${HEROKU_AUTH_TOKEN} --verbose"
    },
   "dependencies": {
     "body-parser": "^1.9.0",
