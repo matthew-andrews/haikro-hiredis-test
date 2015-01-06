@@ -2,7 +2,7 @@
   "name": "hiredis",
   "scripts": {
     "test": "exit 0",
-    "deploy": "heroku build deploy --app hiredis --heroku-token ${HEROKU_AUTH_TOKEN}"
+    "deploy": "haikro build deploy --app hiredis --heroku-token ${HEROKU_AUTH_TOKEN}"
   },
   "dependencies": {
     "express": "^4.10.7",
