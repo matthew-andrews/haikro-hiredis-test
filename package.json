@@ -6,6 +6,7 @@
   },
   "dependencies": {
     "express": "^4.10.7",
+    "forever": "^0.13.0",
     "haikro": "^1.8.1",
     "next-build-tools": "^1.2.0",
     "then-redis": "^1.2.2"
